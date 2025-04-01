@@ -57,3 +57,8 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+## GoogleAPI
+
+Esta aplicación usa un servicio de GoogleAPI con el fin de poder acceder a GoogleDrive y crear/abrir/actualizar archivos de GoogleShhets y usar la informacion almacenada allí como base de datos para esta aplicación, y al usar Drive esta aplicación mostrará información diferente para cada usuario
