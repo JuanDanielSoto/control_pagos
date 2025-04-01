@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { gapi } from 'gapi-script'; //API de Google
+import { env } from './env/credentials';
 
 @Component({
   selector: 'app-root',
@@ -13,8 +14,8 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     gapi.load("client:auth2", () => {
       gapi.client.init({
-        apiKey: 'AIzaSyDuG0TvQHjk9r9xkMUzjzg54aOBN8TD78k',
-        clientId: '536625799288-tslg18vk41no754jmvif7o0jk4c53cqv.apps.googleusercontent.com',
+        apiKey: env.GOOGLE_API_TOKEN,
+        clientId: env.GOOGLE_CLIENT_ID,
         discoveryDocs: [
           'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest',
         ],
