@@ -62,3 +62,25 @@ For more information on using the Angular CLI, including detailed command refere
 ## GoogleAPI
 
 Esta aplicación usa un servicio de GoogleAPI con el fin de poder acceder a GoogleDrive y crear/abrir/actualizar archivos de GoogleShhets y usar la informacion almacenada allí como base de datos para esta aplicación, y al usar Drive esta aplicación mostrará información diferente para cada usuario
+
+# 🌐 Rutas de la App - Control de Pagos de Préstamos
+
+## Rutas Públicas
+- `/login` → Página de inicio de sesión
+
+## Rutas Protegidas (requieren autenticación)
+
+### `/dashboard`
+- Página principal con resumen general
+
+### `/debtors` → Gestión de deudores
+- `/debtors/new` → Agregar nuevo deudor
+- `/debtors/:id` → Ver detalles del deudor
+  - `/debtors/:id/edit` → Editar deudor
+  - `/debtors/:id/loans` → Listar préstamos del deudor
+    - `/debtors/:id/loans/new` → Crear nuevo préstamo
+    - `/debtors/:id/loans/:loanId` → Ver detalles del préstamo
+      - `/debtors/:id/loans/:loanId/edit` → Editar préstamo
+      - `/debtors/:id/loans/:loanId/payments` → Lista de pagos
+        - `/debtors/:id/loans/:loanId/payments/new` → Registrar pago
+        - `/debtors/:id/loans/:loanId/payments/:paymentId` → Det
