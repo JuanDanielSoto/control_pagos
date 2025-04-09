@@ -6,7 +6,6 @@ import { gapi } from 'gapi-script'; //API de Google
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [RouterOutlet, RouterLink],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
